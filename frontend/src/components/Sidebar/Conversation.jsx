@@ -29,7 +29,7 @@ const Conversation = ({ conversation, lastIndex}) => {
             <div className="flex flex-col flex-1" >
                 <div className="flex gap-3 justify-between">
                     <p className="font-bold text-gray-200">{conversation.fullName}</p>
-                    <span className="text-xl">😀</span>
+                    <span className="text-xl">{`${isOnline ? "😀" : "😴"}`}</span>
                 </div>
             </div>
         </div>
